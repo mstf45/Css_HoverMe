@@ -1,0 +1,48 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background: gray;
+}
+.btn{
+    background: #ffc107;
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /*Tam Ortalar */
+    border-radius: 10px;
+    cursor: pointer;
+    /*Link Haline Getirir*/
+}
+.btn::before{
+    color: white;
+    font-family: sans-serif;
+    content: 'Hover Me';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    transition: all 0.5s;
+    /*Efekt Süresi*/
+}
+.btn:hover::before{
+    top: -50%;
+}
+.btn::after{
+    font-family: 'Ionicons';
+    content: ' \f141';
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 140%;
+    font-size: 40px;
+    transition: all 0.5s;
+}
+.btn:hover::after{
+    top: 50%;
+}
